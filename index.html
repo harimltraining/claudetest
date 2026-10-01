@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>InsightLens – Instant Analytics</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header><button class="ib" id="sb" title="Toggle filters">☰</button><b class="logo"><i>◈</i> InsightLens</b>
+<label class="btn pri">⬆ Upload<input id="file" type="file" accept=".xlsx,.xls,.csv" hidden></label>
+<select id="sheet"></select><span id="meta"></span>
+<nav id="nav"><a href="#s-overview">Overview</a><a href="#s-insights">Insights</a><a href="#s-dash">Dashboard</a><a href="#s-drivers">Drivers</a><a href="#s-ask">Ask</a><a href="#s-quality">Quality</a><a href="#s-model">Model</a><a href="#s-table">Table</a></nav>
+<span class="sp"></span><select id="pal" title="Colour theme"></select><button class="btn" id="csv">CSV</button><button class="btn" id="xls">Excel</button><button class="btn" id="pdf">PDF</button><button class="ib" id="theme" title="Dark / light">◐</button></header>
+<div class="wrap"><aside id="side"><div class="ah"><h4>Global filters</h4><button class="lnk" id="reset">Reset all</button></div><input id="q" placeholder="🔍  Search every field…"><div id="filters"></div><p class="hint">Global filters change every chart. Use the ⏷ icon on a chart to filter just that chart.</p></aside>
+<main id="main"><div class="drop"><div class="dz"><div class="big">◈</div><h1>Drop a workbook to begin</h1><p>Drag an <b>.xlsx</b> or <b>.csv</b> file anywhere on this page, or use Upload.<br>Schema discovery, profiling, insights and a full dashboard are generated automatically — nothing leaves your browser.</p></div></div></main></div>
+<script src="xlsx-reader.js"></script><script src="app.js"></script><script src="widgets.js"></script><script src="gbm.js"></script><script src="drivers.js"></script></body></html>
